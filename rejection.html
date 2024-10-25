@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Poem by s.a.poetics | Poetically</title>
+    <meta charset = "utf-8"/>
+	<meta name = "viewport" content = "width=device-width, initial-scale-1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="styles.css" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+</head>
+
+<body>
+    <div id = "container">
+		<nav class="navbar">
+            <a href="index.html">
+                <img src="images/poetically_white.png" class="header-image" alt="Poetically Logo">
+            </a>
+            <div class="hamburger" onclick="toggleMenu()" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ham-bar"></span>
+                <span class="ham-bar"></span>
+                <span class="ham-bar"></span>
+            </div>
+            <ul class="nav-menu" aria-hidden="true">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="poetry.html" class="nav-link">Poetry</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="compose.html" class="nav-link">Compose</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="container poem">
+                <h1>"Rejection"</h1>
+                <p><a href="sap.html" class="poet-link" target="_blank">by s.a.poetics</a></p><br>
+                <h3>Night is not for noise to hoist;<br>
+                    Ill-advised as for today.<br>
+                    The crowd’s cheer has lost its voice<br>
+                    to such distressing display.<br>
+                    <br>
+                    As the man who was trembling,<br>
+                    before his heavy thoughts freed.<br>
+                    His eyes felt their eyes leaning<br>
+                    beyond what his clenches breed.<br>
+                    <br>
+                    Ungently, did the other land<br>
+                    unsweet than he expected;<br>
+                    Towards the paper in hand,<br>
+                    Phrases retaliated.<br>
+                    <br>
+                    Only a word upon his;<br>
+                    His world, tender if of two.<br>
+                    He would know no other bliss,<br>
+                    and let that world continue.<br>
+                    <br>
+                    But a murmur of Time's sense:<br>
+                    Pain is brief as one's Steppings.<br>
+                    Though Courage and Confidence<br>
+                    appear in discerned musings,<br>
+                    can be in one existence;<br>
+                    Acceptance of Impendings.<br>
+                    <br>
+                    — June 23, 2024
+                    </h3>
+            </div>
+            <div class="content-wrapper">
+                <div class="like-button" id="likeButton">
+                    <span class="quill-icon">&#9998;</span>
+                </div>
+                <p class="notif">There are a total of 3.3k likes</p><br>
+            </div>
+            
+            <script>
+                const likeButton = document.getElementById('likeButton');
+                likeButton.addEventListener('click', () => {
+                    likeButton.classList.toggle('liked');
+                });
+            </script>
+
+            <div class="themes container">
+                <br>
+                <h1>Themes</h1>
+                <p>The poem revolves around the idea of facing and acknowledging the fate of rejection from someone we admire. Beset on a confession, the poem narrates the bittersweet moment that the one who confessed hears the exact opposite of their expectation. While the latter part of the poem directly addresses the reader and attempts to ease the confessor, that looking into how their confidence allowed them to speak their truth, their courage to let the feeling go altogether after rejection is truly the path where someone finds their means to be free and wiser. 
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2024. All rights reserved. Created by Shan Harvey Arcuino</p>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>

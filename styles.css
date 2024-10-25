@@ -1,0 +1,733 @@
+
+/*CSS reset*/
+body, header, nav, main, footer, h1, div, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* Universal rule */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+image {
+    left: 0;
+}
+
+/* Navigation Rules */
+nav {
+    position: relative;
+    background-color: #4F2816;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+    align-items: right;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.header-image {
+    align-items: left;
+    margin-right: auto;
+}
+
+nav li {
+    font-size: 1.25em;
+    font-family: "Inclusive Sans", sans-serif;
+    display: inline-block;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    padding: 0.1em 0.75em;
+    text-decoration: none;
+    background-color: #4F2816;
+}
+
+nav li a:hover {
+    color: #4F2816;
+    background-color: #CBA793;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.5s;
+}
+
+/* Mobile styles */
+.hamburger {
+    cursor: pointer;
+    display: none; 
+    position: absolute;
+    top: 3%; 
+    right: 3%;
+}
+
+.ham-bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 4px auto;
+    background-color: #e4bda8;
+}
+
+/* Show hamburger on mobile */
+@media (max-width: 768px) {
+    .header-image {
+        width: 150%;
+    }
+
+    .hamburger {
+        display: block;
+        margin-top: 10px;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column; 
+        width: 100%; 
+        transition: max-height 0.5s ease-out;
+        max-height: 300px;
+    }
+
+    nav ul.active {
+        display: flex; 
+    }
+
+    nav li {
+        text-align: center;
+    }
+
+    .poem {
+        width: 100%;
+        font-size: x-small;
+    }
+
+    footer {
+        font-size: small;
+    }
+}
+
+
+/* Main Content Rules */
+main {
+    margin: 10px auto;
+    padding: 5em;
+    font-size: larger;
+    text-align: center;
+    color: #4F2816;
+    font-family: IM Fell Great Primer;
+    flex-grow: 1;
+}
+
+#background {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-image: url('images/pbg.jpg');
+    opacity: 5;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(101, 51, 13, 0.9);
+}
+
+#background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.01);
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #D9D9D9;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: IM Fell Great Primer;
+    z-index: 1;
+    opacity: 1;
+    text-align: center;
+}
+
+/* Video Rules */
+
+.media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border: 7px solid #CBA793;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Footer Rules */
+footer {
+    background-color: #CBA793;
+    color:#2E0F01;
+    width: 100%;
+    text-align: center;
+    padding: .2em;
+}
+
+/* Desktop rule for Hamburger icon */
+.mobile-nav {
+    display: none;
+}
+
+/* Image Rules */
+img {
+    min-height: 15%;
+    max-width: 50%;
+}
+
+.outline {
+    border: 5px #fff solid;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    padding: 5% auto;
+    margin-bottom: 5%;
+}
+
+/* Form Rules */
+.form {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    background-color: #4F2816;
+    color: #e4bda8;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#pen-name, #full-name {
+    width: 50%;
+}
+
+#textarea {
+    height: 10rem;
+    width: 36rem;
+}
+
+textarea {
+    height: 150px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 2px solid #e4bda8;
+    border-radius: 7px;
+    background: transparent;
+    font-family: IM Fell Great Primer;
+    color: #e4bda8;
+}
+
+input:focus, input:valid, textarea:focus {
+    color: #2E0F01;
+    background-color: #CBA793;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #CBA793;
+}
+
+/* Button Rules for submit and reset (consultation) */
+button {
+    width: 48%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.button[type="reset"] {
+    background-color: #2E0F01;
+    color: #CBA793;
+}
+
+.button[type="submit"] {
+    background-color: #2E0F01;
+    color: #CBA793;
+}
+
+.button[type="reset"]:hover {
+    background-color: #CBA793;
+    color: #2E0F01;
+    transition: color 0.5s, background-color 0.7s;
+}
+
+.button[type="submit"]:hover {
+    background-color: #CBA793;
+    color: #2E0F01;
+    transition: color 0.5s, background-color 0.7s;
+}
+
+/* Button Rules for submit and reset (composition) */
+button[type="reset"] {
+    font-family: IM Fell Great Primer;
+    background-color: #2E0F01;
+    color: #fff;
+}
+
+button[type="submit"] {
+    font-family: IM Fell Great Primer;
+    background-color: #2E0F01;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #CBA793;
+    color: #2E0F01;
+    transition: color 0.5s, background-color 0.7s;
+}
+
+/* CSS rules for links */
+a {
+    text-decoration: none;
+}
+
+.poem-card, .poem-card:visited, .poem-card:active, .poem-card::after {
+    color: #2E0F01;
+}
+
+.poem-card:hover {
+    color: #CBA793;
+}
+
+.poem-links {
+    color: #2E0F01;
+    text-decoration: none;
+}
+
+.poem-links:hover {
+    border-radius: 7px;
+    padding: 5px;
+    background-color: #2E0F01;
+    color: #CBA793;
+}
+
+#consult {
+    color: #37B3E8;
+    transition: padding 0.3s;
+}
+
+.poet-link, .poet-link:visited, .poet-link:active, .poet-link:after {
+    padding: 2%;
+    border-radius: 7px;
+    background-color: #4F2816;
+    color: #CBA793;
+}
+
+.poet-link:hover {
+    padding: 2%;
+    border-radius: 7px;
+    background-color: #4B7E83;
+    color: #37B3E8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: color 0.5s, background-color 0.7s, box-shadow 0.5s;
+}
+
+/* CSS rules for links - Composition/Consultation */
+#consult:hover {
+    border-radius: 7px;
+    padding: 1%;
+    background-color: #2E0F01;
+    color: #CBA793;
+    box-shadow: 0 0 10px rgba(101, 51, 13, 0.9);
+    transition: padding 0.5s, box-shadow 0.4s;
+}
+
+.consult {
+    color: #2E0F01;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: IM Fell Great Primer;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-top: 10%;
+}
+
+.page {
+    background-color: #4F2816;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* CSS rules for tables */
+table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #2E0F01;
+    text-align: left;
+}
+
+th {
+    background-color: #D9D9D9;
+}
+
+/* CSS rules for div containers */
+.container {
+    padding: 10%;
+}
+
+.container-1 {
+    background-color: #e4bda8;
+    padding: 10%;
+    border-radius: 25px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(98, 31, 3, 0.7);
+}
+
+.container-2 {
+    background-color: #e4bda8;
+    padding: 10%;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(98, 31, 3, 0.7);
+    position: relative;
+}
+
+.container-2 a, .container-2 a:visited, .container-2 a:active {
+    padding: 1em;
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    position: relative;
+    font-family: "Inclusive Sans", sans-serif;
+    color: #2E0F01;
+}
+
+.container-2 a::before {
+    content: attr(social);
+    position: absolute;
+    background-color: #2E0F01;
+    color: #CBA793;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(98, 31, 3, 0.5);
+    transform: translateY(-30px) rotate(65deg);
+    right: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transition: 200ms ease;
+}
+
+.container-2 a:hover::before {
+    transform: translateY(-45px) rotate(0);
+    opacity: 1;
+}
+
+.poem {
+    max-width: 50%;
+    margin: auto;
+    background-color: #fff;
+    padding-top: 7%;
+    padding-bottom: 15%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.left-alignment {
+    text-align: left;
+
+}
+
+#left-alignment, #right-alignment {
+    background-color: #e4bda8;
+    padding: 10%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(98, 31, 3, 0.7);
+    position: relative;
+    margin: 30px;
+}
+
+
+
+/* Icons */
+.icon {
+    font-size: 40px;
+}
+
+.icon:hover {
+    transition: transform 0.5s;
+    transform: translateY(-5px);
+}
+
+/* CSS rules for search bar */
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #e4bda8;
+}
+
+.search-input {
+    font-family: IM Fell Great Primer;
+    outline: #2E0F01;
+    border-radius: 20px;
+    color: #2E0F01;
+    background-color: #e4bda8;
+}
+
+.search-input::placeholder {
+    color:#4F2816;
+    opacity: 0.8;
+}
+
+.material-symbols-outlined {
+    color: #2E0F01;
+}
+
+/* CSS rules for Poem cards */
+.poem-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.card {
+    border: 1px solid #2E0F01;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 5%;
+    transition: transform .7s;
+}
+
+.card:hover {
+    background-color: #4F2816;
+    color: #CBA793;
+    transition: color 0.3s, background-color 0.5s, transform .5s;
+    transform: scale(1.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.poem-header {
+    margin-bottom: .25rem;
+}
+
+.poet-name {
+    font-size: .9rem;
+    opacity: .8;
+}
+
+/* like button */
+.like-button {
+    font-size: 40px;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin-right: 10px;
+}
+
+.like-button.liked {
+    color: #4B7E83;
+}
+
+.quill-icon {
+    display: inline-block;
+    transform: rotate(85deg);
+}
+
+.notif {
+    font-size: larger;
+}
+
+.content-wrapper {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Themes section */
+
+.themes {
+    max-width: 70%;
+    margin: auto;
+    background-color: #CBA793;
+    color: #2E0F01;
+    padding-top: 7%;
+    padding-bottom: 15%;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(98, 31, 3, 0.7);
+}
+
+/* Profile CSS */
+.brown-background {
+    background-color: #CBA793;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 3%;
+    font-size: 1.3rem;
+    font-family: IM Fell Great Primer;
+    color: #2E0F01;
+    box-shadow: 0 0 10px rgba(98, 31, 3, 0.5);
+}
+
+.profile {
+    width: 30rem;
+    height: 25rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.bigger-poem-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 5rem;
+}
+
+/* TABLET VIEWPORT */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1em;
+    }
+
+    nav ul {
+        text-align: left;
+        width: 100%;
+    }
+
+    .header-image {
+        margin: 0;
+        height: 10px;
+    }
+
+    nav li {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 2em;
+    }
+
+    .container, .container-1, .container-2 {
+        padding: 5%;
+        margin: 10px auto;
+        width: 90%;
+    }
+
+    .page {
+        margin: 0 auto;;
+    }
+    
+    h1 {
+        font-size: 2em;
+        padding: 5% 0;
+    }
+    
+    .icon {
+        font-size: 30px;
+    }
+    
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 2em 1em;
+        font-size: 1em;
+    }
+
+    #background {
+        height: 300px;
+    }
+
+    .text {
+        font-size: 50px;
+    }
+
+    img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    #pen-name, #full-name {
+        width: 100%;
+    }
+
+    #textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .form {
+        padding: 2em;
+    }
+
+    .poem-card {
+        max-width: 100%;
+        padding: 2%;
+    }
+
+    .poem-cards {
+        grid-template-columns: 1fr;
+    }
+}
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Compose your piece! | Poetically</title>
+    <meta charset = "utf-8"/>
+	<meta name = "viewport" content = "width=device-width, initial-scale-1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="styles.css" type="text/css"/>
+</head>
+
+<body>
+    <div id = "container">
+		<nav class="navbar">
+            <a href="index.html">
+                <img src="images/poetically_white.png" class="header-image" alt="Poetically Logo">
+            </a>
+            <div class="hamburger" onclick="toggleMenu()" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ham-bar"></span>
+                <span class="ham-bar"></span>
+                <span class="ham-bar"></span>
+            </div>
+            <ul class="nav-menu" aria-hidden="true">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="poetry.html" class="nav-link">Poetry</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="compose.html" class="nav-link">Compose</a></li>
+            </ul>
+        </nav>
+
+        <div id ="background" class = "tablet-desktop">
+            <div class="text">Compose</div>
+        </div>
+
+        <main>
+            <div class="form container">
+                <h1 id="title">Compose your Poem</h1>
+                    <form id="survey-form">
+                        <label id="pen-name"><input id="penname" type="text" placeholder="Pen name" required />ex. Quarles</label> <label id="full-name"><input id="fullname" type="text" placeholder="Full name..." required /> ex. Edgar Allan Poe</label>
+                        <br>
+                        <label id="email-label"><input id="email" type="email" placeholder="Email" required /></label>
+                    <br>
+                    <label id="poem-image-label"></label>Upload an image of your Poem:<input id="poem-image" type="file" accept="image/*" required />
+                        </label>
+                    <label id="description"><textarea placeholder="Describe your piece"></textarea></label>
+                    <br>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                    <br>
+                    <p>or click here to <a id="consult" href="consult.html" target="_blank">consult about your Poem!</a></p>
+            </div>
+
+            <div class="container">
+                <h1>Most read poems:</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Poet</th>
+                            <th>Title</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@S.A.poetics</td>
+                            <td><a href="rejection.html" target="_blank" class="poem-links">"Rejection"</a></td>
+                        </tr>
+                        <tr>
+                            <td>@S.A.poetics</td>
+                            <td><a href="overthinking.html" target="_blank" class="poem-links">"Overthinking"</a></td>
+                        </tr>
+                        <tr>
+                            <td>@S.A.poetics</td>
+                            <td><a href="humanity.html" target="_blank" class="poem-links">"Humanity"</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2024. All rights reserved. Created by Shan Harvey Arcuino</p>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>

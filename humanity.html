@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Poem by s.a.poetics | Poetically</title>
+    <meta charset = "utf-8"/>
+	<meta name = "viewport" content = "width=device-width, initial-scale-1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="styles.css" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+</head>
+
+<body>
+    <div id = "container">
+		<nav class="navbar">
+            <a href="index.html">
+                <img src="images/poetically_white.png" class="header-image" alt="Poetically Logo">
+            </a>
+            <div class="hamburger" onclick="toggleMenu()" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ham-bar"></span>
+                <span class="ham-bar"></span>
+                <span class="ham-bar"></span>
+            </div>
+            <ul class="nav-menu" aria-hidden="true">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="poetry.html" class="nav-link">Poetry</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="compose.html" class="nav-link">Compose</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="container poem">
+                <h1>"Humanity"</h1>
+                <p><a href="sap.html" class="poet-link" target="_blank">by s.a.poetics</a></p><br>
+                <h3>Human is an Intrigue intricate.<br>
+                    An exterior that is converse<br>
+                    to its interior—Infinite!<br>
+                    As they are both well-versed and averse.<br>
+                    <br>
+                    To the Thief facing perturbation<br>
+                    that masses joined, to upend the chase.<br>
+                    To the unfaithful lover’s action<br>
+                    towards maidens, he shall soon disgrace.<br>
+                    <br>
+                    But to the child in apology.<br>
+                    To the foreigner’s greet—quite himself.<br>
+                    And to the dreamer's success-to-be.<br>
+                    Complexity brought upon itself!<br>
+                    <br>
+                    Yet an instance of observation<br>
+                    to the smallest counts or lack thereof,<br>
+                    one uncovers the Indication:<br>
+                    That a human within calls the bluff.<br>
+                    <br>
+                    — June 24, 2024
+                    </h3>
+            </div>
+            <div class="content-wrapper">
+                <div class="like-button" id="likeButton">
+                    <span class="quill-icon">&#9998;</span>
+                </div>
+                <p class="notif">There are a total of 1.1k likes</p><br>
+            </div>
+            
+            <script>
+                const likeButton = document.getElementById('likeButton');
+                likeButton.addEventListener('click', () => {
+                    likeButton.classList.toggle('liked');
+                });
+            </script>
+
+            <div class="themes container">
+                <br>
+                <h1>Themes</h1>
+                <p>The poem is set on someone vicariously inspecting the people around them. Trying to find meaning how could someone say that some people lack humanity, while even those who "lack" it can be conscious of their actions. Traversing through multiple scenarios that reveals how unique humans are from everything on earth. Where the final realization of the speaker became clear, that even for standing by, watching their individual lives, whether a prospect of a good or bad outcome---which may appear inhumane of them, there are no humans who lack humanity, only ignorance.
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2024. All rights reserved. Created by Shan Harvey Arcuino</p>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>

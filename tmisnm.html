@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Poem by s.a.poetics | Poetically</title>
+    <meta charset = "utf-8"/>
+	<meta name = "viewport" content = "width=device-width, initial-scale-1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="styles.css" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+</head>
+
+<body>
+    <div id = "container">
+		<nav class="navbar">
+            <a href="index.html">
+                <img src="images/poetically_white.png" class="header-image" alt="Poetically Logo">
+            </a>
+            <div class="hamburger" onclick="toggleMenu()" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ham-bar"></span>
+                <span class="ham-bar"></span>
+                <span class="ham-bar"></span>
+            </div>
+            <ul class="nav-menu" aria-hidden="true">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="poetry.html" class="nav-link">Poetry</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="compose.html" class="nav-link">Compose</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="container poem">
+                <h1>"the moon is shy no more"</h1>
+                <p><a href="sap.html" class="poet-link" target="_blank">by s.a.poetics</a></p><br>
+                <h3>My sole dearest, the moon is shy no more.<br>
+                    For it returns to whom it’s shining for.<br>
+                    Though glow is borrowed, ’tis I who chooses<br>
+                    To beam, at the eyes where stars fill spaces.<br>
+                    <br>
+                    Come and bask in your softest throne—the Earth.<br>
+                    Where Night sets all in motion as the birthed<br>
+                    Epitome of no surpassing sway<br>
+                    under the light that fades in sight of day.<br>
+                    <br>
+                    O, Light invisible, reach a firm stay!<br>
+                    All too short: The Night over yesterday.<br>
+                    But ’tis I who take Sun’s identity.<br>
+                    Failure to have light in Independency.<br>
+                    <br>
+                    — April 10, 2024
+                    </h3>
+            </div>
+            <div class="content-wrapper">
+                <div class="like-button" id="likeButton">
+                    <span class="quill-icon">&#9998;</span>
+                </div>
+                <p class="notif">There are a total of 1.1k likes</p><br>
+            </div>
+            
+            <script>
+                const likeButton = document.getElementById('likeButton');
+                likeButton.addEventListener('click', () => {
+                    likeButton.classList.toggle('liked');
+                });
+            </script>
+
+            <div class="themes container">
+                <br>
+                <h1>Themes</h1>
+                <p>The poem talks about the feelings of regret, frustration, and anxiety. Regret for the speaker cannot have their own courage to freely love and embrace their muse; the one they deem to be beyond "surpassing," meaning perfect. Frustration at the short time that a borrowed courage from someone else lasts until they are no longer fearless to attempt to love. And anxiety towards their muse, for they may not want an inconsistent display of affection from someone, so long as the speaker cannot find an infinite source of "light," they continue to deny yet worry for the future.
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2024. All rights reserved. Created by Shan Harvey Arcuino</p>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>

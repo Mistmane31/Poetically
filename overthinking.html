@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Poem by s.a.poetics | Poetically</title>
+    <meta charset = "utf-8"/>
+	<meta name = "viewport" content = "width=device-width, initial-scale-1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="styles.css" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+</head>
+
+<body>
+    <div id = "container">
+		<nav class="navbar">
+            <a href="index.html">
+                <img src="images/poetically_white.png" class="header-image" alt="Poetically Logo">
+            </a>
+            <div class="hamburger" onclick="toggleMenu()" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ham-bar"></span>
+                <span class="ham-bar"></span>
+                <span class="ham-bar"></span>
+            </div>
+            <ul class="nav-menu" aria-hidden="true">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="poetry.html" class="nav-link">Poetry</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="compose.html" class="nav-link">Compose</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="container poem">
+                <h1>"Overthinking"</h1>
+                <p><a href="sap.html" class="poet-link" target="_blank">by s.a.poetics</a></p><br>
+                <h3>What wanders through my mind<br>
+                    often rest with me unanswered.<br>
+                    The end, as Hair we find<br>
+                    braided in amongst each other:<br>
+                    <br>
+                    A kiss under moon's reign,<br>
+                    will it be impasse to Tyrants?<br>
+                    A barefoot dance in rain,<br>
+                    is it lonesome feet's assurance?<br>
+                    An embrace from your arms,<br>
+                    will it be shelter, forever?<br>
+                    And dispell all your charms,<br>
+                    is it apt to be Endeavor?<br>
+                    <br>
+                    To quest such restless seas,<br>
+                    and cause break to the Precipice.<br>
+                    Sunder the waves of Sleaze<br>
+                    atop steering each one's remiss.<br>
+                    <br>
+                    Only then, will it still<br>
+                    —the mind; alas, would set it free!<br>
+                    Such meanest thoughts would thrill<br>
+                    only true lovers' Empathy.<br>
+                    <br>
+                    — May 9, 2023
+                    </h3>
+            </div>
+            <div class="content-wrapper">
+                <div class="like-button" id="likeButton">
+                    <span class="quill-icon">&#9998;</span>
+                </div>
+                <p class="notif">There are a total of 2.1k likes</p><br>
+            </div>
+            
+            <script>
+                const likeButton = document.getElementById('likeButton');
+                likeButton.addEventListener('click', () => {
+                    likeButton.classList.toggle('liked');
+                });
+            </script>
+
+            <div class="themes container">
+                <br>
+                <h1>Themes</h1>
+                <p>The poem embodies what it's like to overestimate a connection with a person you're intimate with. Pointing out each thought of impulsion by a completely different imagery yet leading to one point in question. That the speaker emphasizes the feeling and invites the reader to overthink the outcome with them. <br>
+                    <br>
+                    Yet despite the variety of metaphors---which may lead to a messy picture---the speaker never once villainized their lover, rather they lay bare their anxiety of minute moments of sweetness, trying to predict when it will last. And such that these complex things that not even only people who are in love experience, the outcome would only be answerable by someone's capacity of being an empath.
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2024. All rights reserved. Created by Shan Harvey Arcuino</p>
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html>

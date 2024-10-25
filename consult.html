@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Consultation | Poetically</title>
+    <meta charset = "utf-8"/>
+	<meta name = "viewport" content = "width=device-width, initial-scale-1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="styles.css" type="text/css"/>
+</head>
+
+<body>
+    <div id = "container">
+		<nav class="navbar">
+            <a href="index.html">
+                <img src="images/poetically_white.png" class="header-image" alt="Poetically Logo">
+            </a>
+            <div class="hamburger" onclick="toggleMenu()" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ham-bar"></span>
+                <span class="ham-bar"></span>
+                <span class="ham-bar"></span>
+            </div>
+            <ul class="nav-menu" aria-hidden="true">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="poetry.html" class="nav-link">Poetry</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="compose.html" class="nav-link">Compose</a></li>
+            </ul>
+        </nav>
+
+        <div class = "tablet-desktop">
+            <a href="index.html">
+            <img src="images/poetically_black.png" class="center"> </a>
+            <p class="consult">where the line continues on...</p>
+        </div>
+
+        <main>
+            <div class="page">
+            <div class="container">
+                <h1 id="title">Consultation Form</h1>
+                    <form id="survey-form">
+                        <label id="name"><input id="penname" type="text" placeholder="Pen name/Full name..." required /></label>
+                        <br>
+                        <label id="email-label"><input id="email" type="email" placeholder="Email..." required /></label>
+                    <br>
+                    <label id="textarea"><textarea placeholder="Write your concerns here..."></textarea></label>
+                    <br>
+                    <button type="reset" class="button">Reset</button>
+                    <button type="submit" class="button">Submit</button>
+                    <br>
+            </div>
+        </div>
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2024. All rights reserved. Created by Shan Harvey Arcuino</p>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>
